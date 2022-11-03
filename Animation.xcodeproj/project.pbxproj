@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB020FED29142FE3005F3178 /* LanguageChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB020FEC29142FE3005F3178 /* LanguageChooserView.swift */; };
 		AB4C72F428FEA49E0011D571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4C72F328FEA49E0011D571 /* AppDelegate.swift */; };
 		AB4C72F628FEA49E0011D571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4C72F528FEA49E0011D571 /* SceneDelegate.swift */; };
 		AB4C72F828FEA49E0011D571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4C72F728FEA49E0011D571 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB020FEC29142FE3005F3178 /* LanguageChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChooserView.swift; sourceTree = "<group>"; };
 		AB4C72F028FEA49E0011D571 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4C72F328FEA49E0011D571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4C72F528FEA49E0011D571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				AB4C72F328FEA49E0011D571 /* AppDelegate.swift */,
 				AB4C72F528FEA49E0011D571 /* SceneDelegate.swift */,
 				AB4C72F728FEA49E0011D571 /* ViewController.swift */,
+				AB020FEC29142FE3005F3178 /* LanguageChooserView.swift */,
 				AB4C72F928FEA49E0011D571 /* Main.storyboard */,
 				AB4C72FC28FEA4A00011D571 /* Assets.xcassets */,
 				AB4C72FE28FEA4A00011D571 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				AB4C72F828FEA49E0011D571 /* ViewController.swift in Sources */,
 				AB4C72F428FEA49E0011D571 /* AppDelegate.swift in Sources */,
 				AB4C72F628FEA49E0011D571 /* SceneDelegate.swift in Sources */,
+				AB020FED29142FE3005F3178 /* LanguageChooserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

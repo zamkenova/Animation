@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+        
     private let newLogoView: UIView = {
         let view = UIView()
         view.backgroundColor = .black
@@ -28,16 +28,23 @@ class ViewController: UIViewController {
         return image
     }()
     
+    private lazy var languageView: LanguageChooserView = {
+       let view = LanguageChooserView()
+        view.isHidden = true
+       return view
+     }()
+
+    
     override func viewDidAppear(_ animated: Bool) {
         view.backgroundColor = .black
         animation()
     }
-        override func viewDidLoad() {
+    
+    override func viewDidLoad() {
             super.viewDidLoad()
             view.backgroundColor = .black
             setupUI()
-           
-       
+            setupView()
     }
     
     func animation() {
@@ -61,6 +68,11 @@ class ViewController: UIViewController {
                                                    width: self.newLogoView.frame.width,
                                                    height: self.newLogoView.frame.height)
                 self.newImage.alpha = 3
+        }completion: { _ in
+            UIView.animate(withDuration: 0.5, delay: 0.3) {
+                   self.languageView.isHidden = false
+                
+                }
         }
        }
     }
@@ -93,12 +105,21 @@ class ViewController: UIViewController {
         newImage.leftAnchor.constraint(equalTo: view.rightAnchor, constant: -30),
         newImage.heightAnchor.constraint(equalToConstant: 100),
     ])
-      
-   
-      
-     
+}
     
+  func setupView() {
+        [languageView]
+          .forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview($0)
+          }
+        NSLayoutConstraint.activate([
+          languageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                             constant: 8),
+          languageView.widthAnchor.constraint(equalToConstant: 100),
+          languageView.rightAnchor.constraint(equalTo: view.rightAnchor,
+                            constant: -16),
+          languageView.heightAnchor.constraint(equalToConstant: 30)
+        ])
+      }
 }
-}
-
-
